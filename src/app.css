@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Firasan";
+    src: url('../src/font/FiraSans-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Firasan", sans-serif;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+}
