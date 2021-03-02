@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Logo from "../../img/mylogo.png";
 import { GoSearch } from "react-icons/go";
 import {  GiHamburgerMenu } from "react-icons/gi";
@@ -7,17 +7,20 @@ import { GrUserExpert } from "react-icons/gr";
 import "./Shead.css";
 
 function Shead() {
+    const [block,setBlock] = useState(false);
     return (
         <div className="second-head">
-        <div className="overlay"></div>
+        <div className={block ? 'overlay active' : 'overlay'}></div>
         <div className="media-down">
             <form className="search-hidden">
                 <p>Search</p>
-                <GoSearch className="icons-search" />
-                <div className="block-search">
+                <GoSearch className="icons-search" onClick={()=>{
+                    setBlock(!block);
+                }} />
+                <div className={block ? 'block-search active' : 'block-search' }>
                 <div className="text-search">
                     <h3>TYPE TO SEARCH</h3>
-                    <AiOutlineClose className="icons-close"/>
+                    <AiOutlineClose className="icons-close" onClick={()=>{setBlock(!block)}}/>
                 </div>
                 <div className="search-bar">
                 <input type="text" name="search-hi" placeholder="search products..." />
