@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "../../img/logo2.PNG";
+import Logo from "../../img/mylogo.png";
 import { GoSearch } from "react-icons/go";
 import {  GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose ,AiOutlineShoppingCart} from "react-icons/ai";
@@ -15,7 +15,6 @@ function Shead() {
                 <p>Search</p>
                 <GoSearch className="icons-search" />
                 <div className="block-search">
-                
                 <div className="text-search">
                     <h3>TYPE TO SEARCH</h3>
                     <AiOutlineClose className="icons-close"/>
@@ -33,19 +32,19 @@ function Shead() {
                 <input  type="text" name="search-hi" placeholder="search products..." />
                  <GoSearch />
             </form>
-                <ul>
+                <ul className="full-drop">
                     <li><a href="/">Home</a></li>
-                    <li>
+                    <li className="f-drop">
                     <a href="/">Shop</a>
-                    <ul>
+                    <ul className="drop-down">
                         <li><a href="/">Product Variation</a></li>
                         <li><a href="/">Cart</a></li>
                         <li><a href="/">Checkout</a></li>
                         <li><a href="/">My Account</a></li>
                     </ul>
                     </li>
-                    <li><a href="/">Pages</a>
-                        <ul>
+                    <li className="f2-drop"><a href="/">Pages</a>
+                        <ul className="drop-down-second">
                             <li><a href="/">About</a></li>
                             <li><a href="/">Contact</a></li>
                         </ul>                    
@@ -55,31 +54,33 @@ function Shead() {
                 </div>
             </nav>
             <div className="user-cart">
-                <a href="/"><GrUserExpert /></a>
-                <a href="/"><AiOutlineShoppingCart /></a>
-                    <div class="subbox">
-					<div class="menu">
-                    <ul>
+                <div className="user-info">
+                    <a href="/"><GrUserExpert /></a>
+                    <div class="subbox">                                    
+                        <ul>
                         <li class="page_item"><a href="/">Home</a></li>
-                        <li class="page_item"><a href="/">About</a></li>
-                        <li class="page_item"><a href="/">Blog</a></li>
-                        <li class="page_item"><a href="/">Cart</a></li>
-                        <li class="page_item"><a href="/">Cart</a></li>
-                        <li class="page_item"><a href="/">Checkout</a></li>
-                        <li class="page_item"><a href="/">Checkout</a></li>
-                        <li class="page_item"><a href="/">Contact</a></li>
-                        <li class="page_item"><a href="/">My account</a></li>
-                        <li class="page_item"><a href="/">My Account</a></li>
-                        <li class="page_item"><a href="/">Sample Page</a></li>
-                        <li class="page_item"><a href="/">Sample Page</a></li>
-                        <li class="page_item"><a href="/">Sample Page</a></li>
-                        <li class="page_item"><a href="/">Sample Page</a></li>
-                        <li class="page_item"><a href="/">Shop</a></li>
-                        <li class="page_item"><a href="/">Wishlist</a></li>
-                    </ul>
+                            <li class="page_item"><a href="/">About</a></li>
+                            <li class="page_item"><a href="/">Blog</a></li>
+                            <li class="page_item"><a href="/">Cart</a></li>
+                            <li class="page_item"><a href="/">Cart</a></li>
+                            <li class="page_item"><a href="/">Checkout</a></li>
+                            <li class="page_item"><a href="/">Checkout</a></li>
+                            <li class="page_item"><a href="/">Contact</a></li>
+                            <li class="page_item"><a href="/">My account</a></li>
+                            <li class="page_item"><a href="/">My Account</a></li>
+                            <li class="page_item"><a href="/">Sample Page</a></li>
+                            <li class="page_item"><a href="/">Sample Page</a></li>
+                            <li class="page_item"><a href="/">Sample Page</a></li>
+                            <li class="page_item"><a href="/">Sample Page</a></li>
+                            <li class="page_item"><a href="/">Shop</a></li>
+                            <li class="page_item"><a href="/">Wishlist</a></li>
+                        </ul>
                     </div>
-				    </div>
-            <div className="bar-3"><GiHamburgerMenu /></div>
+                </div>
+                <div className="user-cart-shop">
+                    <a href="/"><AiOutlineShoppingCart /><span>0</span></a>
+                </div>
+                <div className="bar-3"><GiHamburgerMenu /></div>
             </div>
             </div>
         </div>

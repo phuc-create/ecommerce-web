@@ -1,8 +1,8 @@
 import React from 'react';
 import "../src/app.css";
+import Carousel from './component/carousel/Carousel';
 import Fhead from './component/firstHead/Fhead';
 import Shead from './component/secondHead/Shead';
-
 
 function App() {
     return (
@@ -23,6 +23,7 @@ function App() {
             <p>Chinh sasch la bla</p> */}
             <Fhead />
             <Shead />
+          <Carousel />
         </div>
     )
 }
