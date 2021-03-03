@@ -2,16 +2,30 @@ import React,{useState} from 'react';
 import Logo from "../../img/mylogo.png";
 import { GoSearch } from "react-icons/go";
 import {  GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose ,AiOutlineShoppingCart} from "react-icons/ai";
-import { GrUserExpert } from "react-icons/gr";
+import { AiOutlineClose ,AiOutlineShoppingCart,AiFillCaretRight,AiOutlineCloseSquare} from "react-icons/ai";
+import { FaUser } from "react-icons/fa";
 import "./Shead.css";
 
 function Shead() {
     const [block,setBlock] = useState(false);
+    const [openTag,setOpentag] = useState(false);
+    const [openTags2,setOpentags2] = useState(false);
+    const [openMedia,setOpenmedia] = useState(false);
+    const OpenTags = () =>{
+        setOpentag(!openTag);
+    }
+    const OpenTags2 = () =>{
+        setOpentags2(!openTags2);
+    }
+
+
     return (
         <div className="second-head">
-        <div className={block ? 'overlay active' : 'overlay'}></div>
+        <div className={block|| openMedia ? 'overlay active' : 'overlay'}></div>
         <div className="media-down">
+            <div className={openMedia ? 'close-media active' : 'close-media'} onClick={() =>{
+                setOpenmedia(false);
+            }}><AiOutlineCloseSquare className="ai-icons--close" /></div>
             <form className="search-hidden">
                 <p>Search</p>
                 <GoSearch className="icons-search" onClick={()=>{
@@ -29,6 +43,7 @@ function Shead() {
                 </div>
             </form>
             <nav className="navbar">
+
             <div className="logo"><img src={Logo} alt="logo"/></div>
             <div className="navbar-down">
             <form className="inside-nav">
@@ -56,9 +71,11 @@ function Shead() {
                 </ul>
                 </div>
             </nav>
+
             <div className="user-cart">
-                <div className="user-info">
-                    <a href="/"><GrUserExpert /></a>
+
+                <div className="user info" style={{fontSize:"24px "}}>
+                    <FaUser />
                     <div class="subbox">                                    
                         <ul>
                         <li class="page_item"><a href="/">Home</a></li>
@@ -80,11 +97,51 @@ function Shead() {
                         </ul>
                     </div>
                 </div>
-                <div className="user-cart-shop">
-                    <a href="/"><AiOutlineShoppingCart /><span>0</span></a>
+                <div className="user cart-shop" style={{fontSize:"25px"}}>
+                    <AiOutlineShoppingCart /><span>0</span>
                 </div>
-                <div className="bar-3"><GiHamburgerMenu /></div>
+                <div className="user bar-3" onClick={()=>{
+                    setOpenmedia(true);
+                }}><GiHamburgerMenu  /></div>
             </div>
+            <div className={openMedia ? 'navbar-down hidden active' : 'navbar-down hidden'}>
+            <form className="inside-nav">
+                <input type="text" name="search-hi" placeholder="search products..." />
+                 <GoSearch className="inside-nav__icons-search" />
+            </form>
+                <ul className="full-drop media">
+                    <li><a href="/">Home</a></li>
+                    <li className={openTag ? 'f-drop active' :'f-drop'}>
+                        <div className="f-drop__wrap">
+                        <a href="/">Shop</a>
+                        <div className={openTag ? 'icon-drop active' :'icon-drop'} onClick={OpenTags}>
+                            <AiFillCaretRight className="drop-right" />
+                            </div>
+                        </div>
+                    
+                    <ul className="drop-down">
+                        <li><a href="/">Product Variation</a></li>
+                        <li><a href="/">Cart</a></li>
+                        <li><a href="/">Checkout</a></li>
+                        <li><a href="/">My Account</a></li>
+                    </ul>
+                    </li>
+                    <li className={openTags2 ? 'f2-drop media-drop active' : 'f2-drop media-drop'} style={{marginTop:"5px"}}>
+
+                        <div className="f-drop__wrap">
+                        <a href="/">Pages</a>
+                        <div className={openTags2 ? 'icon-drop active' :'icon-drop'} onClick={OpenTags2}>
+                            <AiFillCaretRight className="drop-right" />
+                            </div>
+                        </div>
+                        <ul className="drop-down-second">
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Contact</a></li>
+                        </ul>                    
+                    </li>
+                    <li><a href="/">Classic products</a></li>
+                </ul>
+                </div>
             </div>
         </div>
     )
