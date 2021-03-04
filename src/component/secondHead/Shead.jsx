@@ -113,7 +113,7 @@ function Shead() {
                     <li><a href="/">Home</a></li>
                     <li className={openTag ? 'f-drop active' :'f-drop'}>
                         <div className="f-drop__wrap">
-                        <a href="/">Shop</a>
+                        <a href="/" style={{pointerEvents:'none'}}>Shop</a>
                         <div className={openTag ? 'icon-drop active' :'icon-drop'} onClick={OpenTags}>
                             <AiFillCaretRight className="drop-right" />
                             </div>
@@ -129,7 +129,7 @@ function Shead() {
                     <li className={openTags2 ? 'f2-drop media-drop active' : 'f2-drop media-drop'} style={{marginTop:"5px"}}>
 
                         <div className="f-drop__wrap">
-                        <a href="/">Pages</a>
+                        <a href="/" style={{pointerEvents:'none'}}>Pages</a>
                         <div className={openTags2 ? 'icon-drop active' :'icon-drop'} onClick={OpenTags2}>
                             <AiFillCaretRight className="drop-right" />
                             </div>

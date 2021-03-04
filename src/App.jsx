@@ -1,6 +1,7 @@
 import React from 'react';
 import "../src/app.css";
 import Carousel from './component/carousel/Carousel';
+import Collection from './component/collection/Collection';
 import Fhead from './component/firstHead/Fhead';
 import Shead from './component/secondHead/Shead';
 
@@ -23,7 +24,8 @@ function App() {
             <p>Chinh sasch la bla</p> */}
             <Fhead />
             <Shead />
-          <Carousel />
+            <Carousel />
+            <Collection />
         </div>
     )
 }

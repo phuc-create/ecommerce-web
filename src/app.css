@@ -86,3 +86,37 @@ body {
         width: 95% !important;
     }
 }
+
+@media only screen and (max-width:1473px) {
+    .carousel .carousel-wrap .carousel__box .carousel__box--content p.inspired,
+    .carousel .carousel-wrap .carousel__box .carousel__box--content.two p.south-america {
+        font-size: 56px !important;
+    }
+}
+
+@media (max-width:1238px) {
+    .carousel .carousel-wrap .carousel__box .carousel__box--content p.inspired,
+    .carousel .carousel-wrap .carousel__box .carousel__box--content.two p.south-america {
+        font-size: 35px !important;
+    }
+    .carousel .carousel-btn {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .carousel__box .shop-btn {
+        width: 125px !important;
+    }
+    .carousel__box .shop-btn a {
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (max-width:505px) {
+    .carousel .carousel-wrap .carousel__box .carousel__box--content p.inspired,
+    .carousel .carousel-wrap .carousel__box .carousel__box--content.two p.south-america {
+        font-size: 23px !important;
+    }
+    .carousel {
+        height: 685px !important;
+    }
+}
