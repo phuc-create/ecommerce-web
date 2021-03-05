@@ -4,6 +4,7 @@ import Carousel from './component/carousel/Carousel';
 import Collection from './component/collection/Collection';
 import Fhead from './component/firstHead/Fhead';
 import Shead from './component/secondHead/Shead';
+import Trend from './component/trend/Trend';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
             <Shead />
             <Carousel />
             <Collection />
+            <Trend />
         </div>
     )
 }

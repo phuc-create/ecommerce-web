@@ -4,12 +4,16 @@ import Collection1 from "../../img/forweb2.jpg";
 import Collection2 from "../../img/forweb3.jpg";
 import hoverEffect from 'hover-effect';
 import Distor from '../../img/10.jpg';
+import Aos from "aos";
 
 function Collection() {
-    useEffect(() => {
+   useEffect(()=>{
+       Aos.init({duration:2000});
+   })
+    useEffect(() => { 
         Array.from(document.querySelectorAll('.collection__img-border')).forEach((e) => {
             const imgs = Array.from(e.querySelectorAll('img'));
-            new hoverEffect({
+          new hoverEffect({
                 parent: e,
                 intensity: 0.3,
                 image1: imgs[0].getAttribute('src'),
@@ -21,9 +25,9 @@ function Collection() {
     return (
         <div className="collection">
             <div className="collection--wrapper">
-                <div className="collection__content">
+                <div className="collection__content" data-aos="fade-right">
                     <div className="col__content--head">
-                        <p>MEN'S COLLECTION</p>
+                        <p>IPAD COLLECTION</p>
                     </div>
                     <div className="col__content--middle">
                         <p>The Art - Classic Fusion</p>
@@ -42,7 +46,7 @@ function Collection() {
                         <a href="/">view collection</a>
                     </div>
                 </div>
-                <div className="collection__img">
+                <div className="collection__img" data-aos="fade-left">
                     <div className="col__img__border-absolute"></div>
                     <div className="collection__img-border">
                         <img className="collection__img--single" src={Collection1} alt="collapse" />

@@ -39,24 +39,10 @@ body {
         height: 60px;
     }
     .navbar-down.hidden {
-        left: -100%;
-        transition: 0.5s;
-        display: inline !important;
-        position: absolute;
+        display: flex !important;
     }
     .navbar-down.hidden.active {
-        background: #fff;
-        z-index: 20;
-        top: 0;
         left: 0%;
-        width: 40%;
-        height: 100%;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 20px;
-        transition: 0.5s;
-        overflow-y: auto;
     }
     .media-down .user-cart .user.info .subbox {
         width: 150px !important;

@@ -202,7 +202,7 @@
     border: 1px solid rgba(255, 255, 255, 1);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
-    z-index: -1;
+    z-index: 1;
     perspective: 1200px;
     transform-origin: bottom;
 }
@@ -222,7 +222,6 @@
 
 .media-down .navbar .navbar-down ul.full-drop .f2-drop {
     position: relative;
-    transition: 0.5s;
 }
 
 .media-down .navbar .navbar-down ul.full-drop .f2-drop .drop-down-second {
@@ -233,23 +232,22 @@
     list-style: none;
     transform: translateY(100px);
     width: 200px;
-    opacity: 0;
     visibility: hidden;
     background: #fff;
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 1);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
-    z-index: -1;
+    z-index: 1;
+    opacity: 0;
     perspective: 1200px;
     transform-origin: bottom;
 }
 
 .media-down .navbar .navbar-down ul.full-drop .f2-drop:hover .drop-down-second {
     transform: translateY(0px);
-    opacity: 1;
-    z-index: 1;
     visibility: visible;
+    opacity: 1;
 }
 
 .media-down .navbar .navbar-down ul.full-drop .f2-drop .drop-down-second li {
@@ -280,6 +278,7 @@
     font-size: 25px;
     text-decoration: none;
     color: #000;
+    cursor: pointer;
 }
 
 .media-down .user-cart .user.cart-shop span {
@@ -341,10 +340,24 @@
 .media-down .user-cart .user.info .subbox ul li.page_item a {
     font-size: 17px;
     margin: 5px;
+    color: #000;
 }
 
 .navbar-down.hidden {
     display: none;
+    position: absolute;
+    background: #fff;
+    left: -100%;
+    z-index: 20;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.5s;
+    overflow-y: auto;
 }
 
 .navbar-down.hidden .inside-nav {
@@ -482,15 +495,19 @@
     justify-content: center;
     color: #fff;
     top: 15px;
-    right: -150px;
+    right: 30px;
     border: 3px solid #fff;
     align-items: center;
     cursor: pointer;
     transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .close-media.active {
     right: 15px;
+    opacity: 1;
+    visibility: visible;
 }
 
 .close-media .ai-icons--close {
