@@ -118,8 +118,7 @@
 }
 
 .collection--wrapper .collection__img .collection__img-border canvas {
-    width: 75% !important;
-    height: 75% !important;
+    padding: 45px 0px 80px 60px;
 }
 
 .collection--wrapper .collection__img .col__img__border-absolute {
