@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import "../collection/Collection.css";
+import "./Collection.css";
 import Collection1 from "../../img/forweb2.jpg";
 import Collection2 from "../../img/forweb3.jpg";
 import hoverEffect from 'hover-effect';
