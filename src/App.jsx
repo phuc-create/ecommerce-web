@@ -5,6 +5,7 @@ import Collection from './component/collection/Collection';
 import Fhead from './component/firstHead/Fhead';
 import Shead from './component/secondHead/Shead';
 import Trend from './component/trend/Trend';
+import Video from './component/video/Video';
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
             <Carousel />
             <Collection />
             <Trend />
+            <Video />
         </div>
     )
 }

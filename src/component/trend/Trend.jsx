@@ -2,9 +2,9 @@ import React from 'react';
 
 import "./Trend.css";
 import TrendBx from './TrendBx';
+import { products} from "./products";
 
-
-function Trend() {
+function Trend(props) {
  
     return (
         <div className="trend">
@@ -19,7 +19,7 @@ function Trend() {
             </div>
             <div className="trend__products">
                 <div className="trend__products--wrapper">
-                    <TrendBx />
+                    <TrendBx products={products} />
                 </div>
             </div>
         </div>

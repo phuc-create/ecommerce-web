@@ -49,22 +49,19 @@
 }
 
 .trend .trend__products {
-    width: 100%;
+    width: 70%;
     height: 100%;
     position: relative;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    overflow: hidden;
 }
 
 .trend .trend__products .trend__products--wrapper {
-    width: 70%;
-    border: 1px solid;
+    width: 250%;
     position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 50px nmb;
+    margin-top: 50px;
 }
 
 .trend .trend__products .trend__products--wrapper .trend__product--box {
