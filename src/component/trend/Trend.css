@@ -72,6 +72,7 @@
     flex-direction: column;
     text-align: center;
     overflow: hidden;
+    margin: 2px;
 }
 
 .trend .trend__products .trend__products--wrapper .trend__product--box .trend_pd-bx--top {

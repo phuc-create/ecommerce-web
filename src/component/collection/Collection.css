@@ -91,6 +91,13 @@
     border: 1px solid rgba(0, 0, 0, 0.7);
     padding: 7px 20px;
     cursor: pointer;
+    background: none;
+    transition: .5s;
+}
+
+.collection .collection--wrapper .collection__content .col__content--view:hover {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .collection .collection--wrapper .collection__content .col__content--view a {
@@ -99,6 +106,11 @@
     letter-spacing: 1px;
     color: #5b5b5b;
     font-family: "Josefin", sans-serif !important;
+    transition: .5s;
+}
+
+.collection .collection--wrapper .collection__content .col__content--view:hover a {
+    color: #fff;
 }
 
 .collection--wrapper .collection__img {

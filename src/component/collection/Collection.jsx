@@ -7,13 +7,13 @@ import Distor from '../../img/10.jpg';
 import Aos from "aos";
 
 function Collection() {
-   useEffect(()=>{
-       Aos.init({duration:2000});
-   })
-    useEffect(() => { 
+    useEffect(() => {
+        Aos.init({ duration: 1500 });
+    })
+    useEffect(() => {
         Array.from(document.querySelectorAll('.collection__img-border')).forEach((e) => {
             const imgs = Array.from(e.querySelectorAll('img'));
-          new hoverEffect({
+            new hoverEffect({
                 parent: e,
                 intensity: 0.3,
                 image1: imgs[0].getAttribute('src'),
