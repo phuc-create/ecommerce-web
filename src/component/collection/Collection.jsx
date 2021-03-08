@@ -8,7 +8,9 @@ import Aos from "aos";
 
 function Collection() {
     useEffect(() => {
+
         Aos.init({ duration: 1500 });
+
     })
     useEffect(() => {
         Array.from(document.querySelectorAll('.collection__img-border')).forEach((e) => {

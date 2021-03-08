@@ -7,7 +7,9 @@ import Aos from "aos";
 
 function Collec2() {
     useEffect(() => {
+
         Aos.init({ duration: 1500 });
+
     }, [])
     return (
         <div className="fashion">

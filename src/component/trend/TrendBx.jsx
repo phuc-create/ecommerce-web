@@ -9,7 +9,10 @@ import "./Trend.css";
 
 function TrendBx({ products }) {
     useEffect(() => {
+
         Aos.init({ duration: 1500 })
+
+
     }, [])
     return (
         products.map((prod) => {

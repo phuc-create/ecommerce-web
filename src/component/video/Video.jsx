@@ -4,7 +4,9 @@ import "./Video.css";
 import Aos from "aos";
 function Video() {
     useEffect(() => {
+
         Aos.init({ duration: 1500 });
+
     }, [])
     return (
         <div className="video__bg">

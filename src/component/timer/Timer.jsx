@@ -18,7 +18,9 @@ function Timer() {
 
     setInterval(showTime, 1000);
     useEffect(() => {
+
         Aos.init({ duration: 1500 });
+
     }, [])
 
     return (
