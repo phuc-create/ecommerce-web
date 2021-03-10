@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import "../src/app.css";
 import Carousel from './component/carousel/Carousel';
 import Collection from './component/collection/Collection';
@@ -9,12 +9,19 @@ import Shead from './component/secondHead/Shead';
 import Timer from './component/timer/Timer';
 import Trend from './component/trend/Trend';
 import Video from './component/video/Video';
+import Thumb from "./component/thumb/Thumb";
+import SimpleReactLightbox from "simple-react-lightbox";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+    useEffect(()=>{
+    Aos.init({duration:800});
+},[]);
     return (
+        
         <div className="app">
             {/* <h1>LOAD PAGE</h1>
-            
             <p>BỘ SƯU TẬP CỦA PHỤ NỮ</p>
             <p>permis count in 30 days</p>
             <p>news</p>
@@ -30,7 +37,11 @@ function App() {
             <Collec2 />
             <Timer />
             <News />
+            <SimpleReactLightbox>
+            <Thumb />
+            </SimpleReactLightbox>
         </div>
+        
     )
 }
 

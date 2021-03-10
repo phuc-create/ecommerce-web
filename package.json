@@ -6,24 +6,22 @@
         "@testing-library/jest-dom": "^5.11.9",
         "@testing-library/react": "^11.2.5",
         "@testing-library/user-event": "^12.7.2",
+        "@types/react": "^17.0.3",
+        "@types/react-dom": "^17.0.2",
         "aos": "^2.3.4",
-        "gsap": "^3.6.0",
         "hover-effect": "^1.1.0",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
-        "react-gsap": "^2.2.1",
         "react-icons": "^4.2.0",
-        "react-player": "^2.9.0",
         "react-scripts": "4.0.3",
-        "serve": "^11.3.2",
+        "simple-react-lightbox": "^3.6.3",
         "web-vitals": "^1.1.0"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "prod": "npm run-script build && serve build"
+        "eject": "react-scripts eject"
     },
     "eslintConfig": {
         "extends": [

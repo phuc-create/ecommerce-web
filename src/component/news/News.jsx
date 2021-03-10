@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import F1 from "../../img/f1.jpg";
 import F2 from "../../img/f2.jpg";
 import F3 from "../../img/f3.jpg";
 import "./News.css";
-import Aos from "aos";
 function News() {
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-    })
+    
     return (
         <div className="news">
             <div className="news__head">

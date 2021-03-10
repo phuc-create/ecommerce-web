@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import "./Collec2.css";
 import CollecBx from './CollecBx';
 import { products } from './products';
-import Aos from "aos";
 
 function Collec2() {
-    useEffect(() => {
-
-        Aos.init({ duration: 1500 });
-
-    }, [])
     return (
         <div className="fashion">
             <div className="fs__title-img" data-aos="fade-right">

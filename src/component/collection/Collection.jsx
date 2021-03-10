@@ -1,17 +1,13 @@
-import React, { useEffect } from 'react';
+import React,{useEffect} from 'react';
 import "./Collection.css";
 import Collection1 from "../../img/forweb2.jpg";
 import Collection2 from "../../img/forweb3.jpg";
 import hoverEffect from 'hover-effect';
 import Distor from '../../img/10.jpg';
-import Aos from "aos";
+
 
 function Collection() {
-    useEffect(() => {
-
-        Aos.init({ duration: 1500 });
-
-    })
+ 
     useEffect(() => {
         Array.from(document.querySelectorAll('.collection__img-border')).forEach((e) => {
             const imgs = Array.from(e.querySelectorAll('img'));

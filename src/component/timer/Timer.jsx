@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { FaLongArrowAltRight } from "react-icons/fa";
-import Aos from "aos";
 import "./Timer.css";
 
 function Timer() {
@@ -17,11 +16,6 @@ function Timer() {
     }
 
     setInterval(showTime, 1000);
-    useEffect(() => {
-
-        Aos.init({ duration: 1500 });
-
-    }, [])
 
     return (
         <div className="c-down">

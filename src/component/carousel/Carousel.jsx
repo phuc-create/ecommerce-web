@@ -1,16 +1,11 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import ImgCarousel from "../../img/ipad4.jpg";
 import ImgCarousel2 from "../../img/ipad5.jpg";
 import "../carousel/Carousel.css";
 import {AiOutlineDoubleLeft,AiOutlineDoubleRight} from "react-icons/ai";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 function Carousel() {
     const [slider,setSlider] = useState(false);
-    useEffect(()=>{
-        Aos.init({duration:1500});
-    },[])
     return (
         <div className="carousel">
             <div className="carousel-btn prev" onClick={()=>{
