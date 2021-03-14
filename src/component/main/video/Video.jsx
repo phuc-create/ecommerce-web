@@ -1,5 +1,5 @@
 import React from 'react';
-import Vd from "../../img/mp44.mp4";
+import Vd from "../../../img/mp44.mp4";
 import "./Video.css";
 function Video() {
 

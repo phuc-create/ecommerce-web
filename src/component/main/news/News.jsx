@@ -1,10 +1,10 @@
 import React from 'react';
-import F1 from "../../img/f1.jpg";
-import F2 from "../../img/f2.jpg";
-import F3 from "../../img/f3.jpg";
+import F1 from "../../../img/f1.jpg";
+import F2 from "../../../img/f2.jpg";
+import F3 from "../../../img/f3.jpg";
 import "./News.css";
 function News() {
-    
+
     return (
         <div className="news">
             <div className="news__head">

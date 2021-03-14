@@ -1,23 +1,23 @@
-import React,{useState} from 'react';
-import ImgCarousel from "../../img/ipad4.jpg";
-import ImgCarousel2 from "../../img/ipad5.jpg";
-import "../carousel/Carousel.css";
-import {AiOutlineDoubleLeft,AiOutlineDoubleRight} from "react-icons/ai";
+import React, { useState } from 'react';
+import ImgCarousel from "../../../img/ipad4.jpg";
+import ImgCarousel2 from "../../../img/ipad5.jpg";
+import "./Carousel.css";
+import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
 
 function Carousel() {
-    const [slider,setSlider] = useState(false);
+    const [slider, setSlider] = useState(false);
     return (
         <div className="carousel">
-            <div className="carousel-btn prev" onClick={()=>{
+            <div className="carousel-btn prev" onClick={() => {
                 setSlider(false);
             }}><AiOutlineDoubleLeft /></div>
-            <div className="carousel-btn next" onClick={()=>{
+            <div className="carousel-btn next" onClick={() => {
                 setSlider(true);
             }}><AiOutlineDoubleRight /></div>
-        <div className={slider ? 'carousel-wrap next' :'carousel-wrap'}>
+            <div className={slider ? 'carousel-wrap next' : 'carousel-wrap'}>
                 <div className="carousel__box">
                     <div className="carousel__box--img">
-                        <img src={ImgCarousel} alt="ImgCarousel" className="inspired"/>
+                        <img src={ImgCarousel} alt="ImgCarousel" className="inspired" />
                     </div>
                     <div className="carousel__box--content aaaa" data-aos="fade-right">
                         <p className="inspired">Inspired from TableTab</p>
@@ -28,7 +28,7 @@ function Carousel() {
                 </div>
                 <div className="carousel__box">
                     <div className="carousel__box--img">
-                        <img src={ImgCarousel2} alt="ImgCarousel2" className="carousel2"/>
+                        <img src={ImgCarousel2} alt="ImgCarousel2" className="carousel2" />
                     </div>
                     <div className="carousel__box--content two" data-aos="fade-right">
                         <p className="south-america">explore with us</p>
@@ -37,14 +37,14 @@ function Carousel() {
                         <a href="/" >explore</a>
                     </div>
                 </div>
-        </div>
-        <div className="carousel__dots">
-        <div className={slider  ? 'carousel-dot active' : 'carousel-dot'} onClick={()=>{
-                setSlider(false);
-            }}></div>
-            <div className={slider ? 'carousel-dot' : 'carousel-dot active'} onClick={()=>{
-                setSlider(true);
-            }}></div>
+            </div>
+            <div className="carousel__dots">
+                <div className={slider ? 'carousel-dot active' : 'carousel-dot'} onClick={() => {
+                    setSlider(false);
+                }}></div>
+                <div className={slider ? 'carousel-dot' : 'carousel-dot active'} onClick={() => {
+                    setSlider(true);
+                }}></div>
             </div>
         </div>
     )

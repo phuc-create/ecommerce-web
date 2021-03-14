@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Josefin";
-    src: url("../../font/JosefinSans-Light.ttf");
+    src: url("../../../font/JosefinSans-Light.ttf");
     font-family: "JoseBold";
-    src: url('../../font/JosefinSans-Bold.ttf');
+    src: url('../../../font/JosefinSans-Bold.ttf');
     font-family: "JoseRegular";
-    src: url("../../font/JosefinSans-Regular.ttf");
+    src: url("../../../font/JosefinSans-Regular.ttf");
 }
 
 .news {

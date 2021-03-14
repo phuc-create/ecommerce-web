@@ -1,25 +1,26 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 import "../src/app.css";
-import Carousel from './component/carousel/Carousel';
-import Collection from './component/collection/Collection';
-import Collec2 from './component/collection2/Collec2';
-import Fhead from './component/firstHead/Fhead';
-import News from './component/news/News';
-import Shead from './component/secondHead/Shead';
-import Timer from './component/timer/Timer';
-import Trend from './component/trend/Trend';
-import Video from './component/video/Video';
-import Thumb from "./component/thumb/Thumb";
+import Carousel from './component/main/carousel/Carousel';
+import Collection from './component/main/collection/Collection';
+import Collec2 from './component/main/collection2/Collec2';
+import Fhead from './component/main/firstHead/Fhead';
+import News from './component/main/news/News';
+import Shead from './component/main/secondHead/Shead';
+import Timer from './component/main/timer/Timer';
+import Trend from './component/main/trend/Trend';
+import Video from './component/main/video/Video';
+import Thumb from "./component/main/thumb/Thumb";
 import SimpleReactLightbox from "simple-react-lightbox";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Footer from './component/footer/Footer';
 
 function App() {
-    useEffect(()=>{
-    Aos.init({duration:800});
-},[]);
+    useEffect(() => {
+        Aos.init({ duration: 800 });
+    }, []);
     return (
-        
+
         <div className="app">
             {/* <h1>LOAD PAGE</h1>
             <p>BỘ SƯU TẬP CỦA PHỤ NỮ</p>
@@ -38,10 +39,11 @@ function App() {
             <Timer />
             <News />
             <SimpleReactLightbox>
-            <Thumb />
+                <Thumb />
             </SimpleReactLightbox>
+            <Footer />
         </div>
-        
+
     )
 }
 
